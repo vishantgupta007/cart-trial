@@ -1,0 +1,65 @@
+.featured {
+  width: 90%;
+  margin: 3rem auto;
+}
+
+.featured .top {
+  margin-bottom: 5rem;
+  justify-content: space-around;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 2rem;
+}
+
+.featured .top > h1 {
+  text-transform: capitalize;
+  color: #777;
+  font-size: 1.5rem;
+}
+.featured .top p {
+  font-size: 0.9rem;
+  color: #777;
+  text-align: justify;
+}
+
+.featured .bottom {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.bottom > :last-child {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .featured .top {
+    grid-template-columns: 40% 60%;
+    gap: 1rem;
+  }
+
+  .featured .top h1 {
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+  }
+
+  .featured .bottom{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+/* of card component */
+  
+.bottom > :last-child {
+  display: flex;
+}
+
+  .card .image{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  
+}
